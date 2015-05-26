@@ -1,0 +1,119 @@
+$tan: #F2F0E6;
+$teal: #549F99;
+$darkgray: #46474D;
+$lightgray: #606166;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  color: #F2F0E6;
+  background-color: $tan;
+}
+
+nav.top {
+  background-color: $darkgray;
+  margin-bottom: 0;
+  border:none;
+  .container-fluid {
+    background-color:$teal;
+    padding-right:0;
+  }
+  .navbar-header {
+    background-color:$teal;
+    button {
+      margin-right:5%;
+      background-color:$tan;
+    }
+    .postWrapper {
+      background-color: $teal;
+      padding:1%;
+      border:$teal solid 1.2em;
+       display:inline-block;
+      .postService {
+        background-color: $teal;
+        color: $tan;
+        padding:0;
+        margin:0;
+        height:auto;
+      }
+    }
+  }
+
+  .collapse {
+    background-color:$darkgray;
+    ul.navtop {
+      li {
+        &:hover {
+          border-bottom:$teal solid 3px;
+        }
+        &:hover a {
+          color:$teal;
+        }
+        a {
+          top:60%;
+          color:$tan;
+        }
+      }
+    }
+  }
+  .navbar-header {
+    button {
+    height:100%;
+    }
+  }
+}
+
+nav.bottom {
+  background-color: $lightgray;
+  margin-top:0;
+  border:none;
+  .navbottom {
+    padding-left:12%;
+    margin-top:0;
+    li {
+      display:inline-block;
+      &:hover {
+        border-bottom: $teal solid 3px;
+      &:hover a {
+        color: $teal;
+      }
+      }
+      a {
+        color: $tan;
+      }
+    }
+  }
+}
+
+
+
+
+
+//FORM
+
+form {
+  width: 54%;
+  padding: 5%;
+  padding-left:14%;
+  display:inline-block;
+
+  .form-group {
+    label {
+      display:block;
+      color: $darkgray;
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+  }
+}
+
+//FORM OUTPUT
+.output {
+  display:inline-block;
+  color:$darkgray;
+  font-size:2em;
+  padding-left: 15%;
+  padding-top:2%;
+  vertical-align:top;
+
+}
