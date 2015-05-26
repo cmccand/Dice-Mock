@@ -9,9 +9,114 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<nav class="navbar navbar-default top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="postWrapper">
+        <a class="navbar-brand postService" href="#">post.service</a>
+      </div>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navtop">
+        <li><a  href="#"><span class="fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-map-marker fa-stack-1x"></i>
+        </span> Campaigns</a></li>
+        <li><a  href="#"><span class="fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-users fa-stack-1x"></i>
+        </span> Leads</a></li>
+        <li><a  href="#"><span class="fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-pie-chart fa-stack-1x"></i>
+        </span> Analytics</a></li>
+        <li><a href="#"><span class="fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-cog fa-stack-1x"></i>
+        </span> Settings</a></li>
+        <li><a href="#"><span class="fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span> Support</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<nav class="navbar navbar-default bottom">
+  <div class="container">
+    <ul class="nav navbar-nav navbottom">
+      <li><a  href="#"><span class="fa-stack">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-map-marker fa-stack-1x"></i>
+      </span> General</a></li>
+      <li><a  href="#"><span class="fa-stack">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-users fa-stack-1x"></i>
+      </span> Feed</a></li>
+      <li><a  href="#"><span class="fa-stack">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-pie-chart fa-stack-1x"></i>
+      </span> Branding</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Dealer Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Street Address</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Street">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">City, State</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="City, State">
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">City, State</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Cell, Landline, etc.">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">City, State</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="person@place.com">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<div class="container-fluid output">
+  <div class="row">
+    <div class="col-md-10 col-sm-10 col-xs-12">
+        <h2>Bob's Dealership</h2>
+        <p>1234 State Ln.</p>
+        <p>City, State</p>
+        <p>210-123-4567</p>
+        <p>bob@dealer.com</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <body>
   <header>
-    <ul class="nav navbar-nav col-md-12 col-lg-12 col-sm-12">
+    <ul class="nav navbar-nav">
       <li><a href="#">post.services</a></li>
       <li><a  href="#"><span class="fa-stack">
         <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -65,7 +170,10 @@
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="person@place.com">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+  </form> -->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 </body>
 </html>

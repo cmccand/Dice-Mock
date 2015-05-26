@@ -10,94 +10,93 @@ body {
   background-color: $tan;
 }
 
-header {
-  div {
-    display:inline-block;
+nav.top {
+  background-color: $darkgray;
+  margin-bottom: 0;
+  border:none;
+  .container-fluid {
+    background-color:$teal;
+    padding-right:0;
   }
-  ul.navbar-nav {
-    display:block;
-    background-color: $darkgray;
-    height:10vh;
-    margin-bottom: 0;
-    margin-left:0;
-    li {
-      display:inline-block;
-      padding: 0;
-      margin: 0 2% 0 2%;
-      height:100%;
-      text-align:center;
-      &:nth-child(1) {
+  .navbar-header {
+    background-color:$teal;
+    button {
+      margin-right:5%;
+      background-color:$tan;
+    }
+    .postWrapper {
+      background-color: $teal;
+      padding:1%;
+      border:$teal solid 1.2em;
+       display:inline-block;
+      .postService {
         background-color: $teal;
-        padding-left: 0;
-        margin-left: 0;
-      }
-      a {
-        height:100%;
         color: $tan;
-        &:hover {
-          background-color: $darkgray;
-          color: $teal;
-          border-bottom: 4px solid $teal;
-        }
-        &:before {
-          content: '';
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-          margin-right: -0.25em; /* Adjusts for spacing */
-        }
+        padding:0;
+        margin:0;
+        height:auto;
       }
     }
   }
 
-  ul.bottom {
-    display:block;
-    background-color: $lightgray;
-    height:10vh;
-    margin-top: 0;
-    margin-bottom: 8%;
-    padding-left: 18%;
-    li {
-      display:inline-block;
-      padding: 0;
-      margin: 0 2% 0 2%;
-      height:100%;
-      text-align:center;
-      &:nth-child(1) {
-        background-color: $lightgray;
-      }
-      a {
-        height:100%;
-        color: $tan;
+  .collapse {
+    background-color:$darkgray;
+    ul.navtop {
+      li {
         &:hover {
-          color: $teal;
-          background-color: $lightgray;
-          border-bottom: 4px solid $teal;
+          border-bottom:$teal solid 3px;
         }
-        &:before {
-          content: '';
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-          margin-right: -0.25em; /* Adjusts for spacing */
+        &:hover a {
+          color:$teal;
         }
-        span {
-          background-color: $tan;
-          i {
-            font-size: 5px;
-          }
+        a {
+          top:60%;
+          color:$tan;
         }
       }
     }
   }
+  .navbar-header {
+    button {
+    height:100%;
+    }
+  }
 }
+
+nav.bottom {
+  background-color: $lightgray;
+  margin-top:0;
+  border:none;
+  .navbottom {
+    padding-left:12%;
+    margin-top:0;
+    li {
+      display:inline-block;
+      &:hover {
+        border-bottom: $teal solid 3px;
+      &:hover a {
+        color: $teal;
+      }
+      }
+      a {
+        color: $tan;
+      }
+    }
+  }
+}
+
+
+
+
 
 //FORM
 
 form {
   width: 54%;
   padding: 5%;
-  padding-left:18%;
+  padding-left:14%;
+  display:inline-block;
+
   .form-group {
     label {
       display:block;
@@ -106,4 +105,15 @@ form {
       font-size: 1.2em;
     }
   }
+}
+
+//FORM OUTPUT
+.output {
+  display:inline-block;
+  color:$darkgray;
+  font-size:2em;
+  padding-left: 15%;
+  padding-top:2%;
+  vertical-align:top;
+
 }
