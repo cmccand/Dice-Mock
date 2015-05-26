@@ -45,7 +45,8 @@ nav.bottom {
   border: none; }
   nav.bottom .navbottom {
     padding-left: 12%;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0; }
     nav.bottom .navbottom li {
       display: inline-block; }
       nav.bottom .navbottom li:hover {
